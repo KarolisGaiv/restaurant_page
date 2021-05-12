@@ -1,3 +1,5 @@
-import pageLoad from "./pageLoad"
+import pageLoad from "./modules/pageLoad";
+import loadMenu from "./modules/navigation";
 
 pageLoad();
+loadMenu();

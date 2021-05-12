@@ -1,5 +1,6 @@
 body {
   background: antiquewhite;
+  height: 100vh;
   margin: auto;
   width: 80%;
 }
@@ -10,4 +11,10 @@ body {
 
 .page-wrapper {
   text-align: center;
+}
+
+.menu-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 40px;
 }
