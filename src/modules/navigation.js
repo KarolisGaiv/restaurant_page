@@ -1,7 +1,9 @@
+import displayHomeElement from "./home";
+
 function displayMenu() {
     const pageBody = document.querySelector(".page-wrapper")
 
-    const menuWrapper = document.createElement("div")
+    const menuWrapper = document.createElement("nav")
     menuWrapper.classList.add("menu-wrapper")
     pageBody.appendChild(menuWrapper)
 
@@ -12,6 +14,7 @@ function displayMenu() {
     const home = document.createElement("li")
     home.classList.add("menu-item")
     home.innerText = "Home"
+    home.addEventListener("click", displayHomeElement)
     menuList.appendChild(home)
 
     const about = document.createElement("li")
@@ -24,9 +27,14 @@ function displayMenu() {
     contact.innerText = "Contact"
     menuList.appendChild(contact)
 
+    // const itemSection = document.createElement("section")
+    // itemSection.classList.add("menu-item-section")
+    // pageBody.appendChild(itemSection)
+
     menuList.style.listStyleType = "none"
     menuList.style.display = "flex"
     menuList.style.justifyContent = "space-around"
+    menuList.style.margin = "auto"
 }
 
 export default displayMenu
