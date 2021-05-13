@@ -1,17 +1,16 @@
+@import "./mixins";
+
 body {
   background: antiquewhite;
+  bottom: 100px;
   height: 100vh;
   margin: auto;
   width: 80%;
+  position: relative;
 }
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-
-  &-banner {
-    height: 350px;
-  }
+  @include flex-column
 }
 
 .restaurant-header {
@@ -19,8 +18,7 @@ body {
 }
 
 .page-wrapper {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -35,10 +33,9 @@ body {
   color:blueviolet ;
 
   &-content {
+    @include flex-column;
     border: 1px solid black;
     align-self: center;
-    display: flex;
-    flex-direction: column;
     margin: 30px;
     padding: 15px;
     width: 30%;

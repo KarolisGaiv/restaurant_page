@@ -1,14 +1,14 @@
 body {
   background: antiquewhite;
+  bottom: 100px;
   height: 100vh;
   margin: auto;
-  width: 80%; }
+  width: 80%;
+  position: relative; }
 
 .page-header {
   display: flex;
   flex-direction: column; }
-  .page-header-banner {
-    height: 350px; }
 
 .restaurant-header {
   text-align: center; }
@@ -27,10 +27,10 @@ body {
 .menu-item {
   color: blueviolet; }
   .menu-item-content {
-    border: 1px solid black;
-    align-self: center;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    align-self: center;
     margin: 30px;
     padding: 15px;
     width: 30%; }

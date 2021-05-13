@@ -1,4 +1,5 @@
 import displayHomeElement from "./home";
+import displayAboutElement from "./about";
 
 function displayMenu() {
   const pageBody = document.querySelector(".page-wrapper");
@@ -14,7 +15,6 @@ function displayMenu() {
   const home = document.createElement("li");
   home.classList.add("menu-item");
   home.innerText = "Home";
-
   menuList.appendChild(home);
   home.addEventListener("click", displayHomeElement);
 
@@ -22,6 +22,7 @@ function displayMenu() {
   about.classList.add("menu-item");
   about.innerText = "About";
   menuList.appendChild(about);
+  about.addEventListener("click", displayAboutElement)
 
   const contact = document.createElement("li");
   contact.classList.add("menu-item");
