@@ -5,6 +5,15 @@ body {
   width: 80%;
 }
 
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  &-banner {
+    height: 350px;
+  }
+}
+
 .restaurant-header {
   text-align: center;
 }

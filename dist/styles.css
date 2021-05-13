@@ -4,6 +4,12 @@ body {
   margin: auto;
   width: 80%; }
 
+.page-header {
+  display: flex;
+  flex-direction: column; }
+  .page-header-banner {
+    height: 350px; }
+
 .restaurant-header {
   text-align: center; }
 

@@ -1,10 +1,12 @@
 function loadPage() {
   const pageHeader = document.createElement("header");
+  pageHeader.classList.add("page-header")
 
   document.body.appendChild(pageHeader);
 
   const banner = document.createElement("img");
-  banner.src = "../assets/1140x400---restaurant-cafeheader.jpg";
+  banner.src = "../assets/restaurantBanner.jpg";
+  banner.classList.add("page-header-banner")
   pageHeader.appendChild(banner);
 
   const header = document.createElement("h1");

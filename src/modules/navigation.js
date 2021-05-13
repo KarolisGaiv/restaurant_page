@@ -28,10 +28,6 @@ function displayMenu() {
   contact.innerText = "Contact";
   menuList.appendChild(contact);
 
-  // const itemSection = document.createElement("section")
-  // itemSection.classList.add("menu-item-section")
-  // pageBody.appendChild(itemSection)
-
   menuList.style.listStyleType = "none";
   menuList.style.display = "flex";
   menuList.style.justifyContent = "space-around";
