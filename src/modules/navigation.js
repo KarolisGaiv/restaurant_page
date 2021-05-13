@@ -1,5 +1,6 @@
 import displayHomeElement from "./home";
 import displayAboutElement from "./about";
+import displayContactElement from "./contact";
 
 function displayMenu() {
   const pageBody = document.querySelector(".page-wrapper");
@@ -22,12 +23,13 @@ function displayMenu() {
   about.classList.add("menu-item");
   about.innerText = "About";
   menuList.appendChild(about);
-  about.addEventListener("click", displayAboutElement)
+  about.addEventListener("click", displayAboutElement);
 
   const contact = document.createElement("li");
   contact.classList.add("menu-item");
   contact.innerText = "Contact";
   menuList.appendChild(contact);
+  contact.addEventListener("click", displayContactElement);
 
   menuList.style.listStyleType = "none";
   menuList.style.display = "flex";
