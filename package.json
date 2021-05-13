@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "scss": "node-sass --watch styles -o dist"
+    "scss": "node-sass --watch styles -o dist",
+    "dev": "npm run build & npm run scss"
   },
   "repository": {
     "type": "git",
