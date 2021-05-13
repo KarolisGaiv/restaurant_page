@@ -34,8 +34,10 @@ body {
 
   &-content {
     @include flex-column;
-    border: 1px solid black;
     align-self: center;
+    background: #e5f0f0;
+    border: 1px solid black;
+    font-size: 2rem;
     margin: 30px;
     padding: 15px;
     width: 30%;

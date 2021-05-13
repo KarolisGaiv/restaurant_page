@@ -1,16 +1,21 @@
 function about() {
-    const pageWrapper = document.querySelector(".page-wrapper");
-  
-    const aboutContent = document.createElement("section");
-    aboutContent.classList.add("menu-item-content");
-    aboutContent.innerText = "We have arguably THE BEST pasta!";
-    pageWrapper.appendChild(aboutContent);
-  
-    const pastaImage = document.createElement("img");
-    pastaImage.classList.add("menu-item-image")
-    pastaImage.src = "../../assets/pasta.jpg";
-    aboutContent.appendChild(pastaImage);
+  const pageWrapper = document.querySelector(".page-wrapper");
+  const contentWrapper = document.querySelector(".menu-item-content");
+
+  const pastaImage = document.createElement("img");
+  pastaImage.classList.add("menu-item-image");
+  pastaImage.src = "../../assets/pasta.jpg";
+
+  function clear(element) {
+    element.innerHTML = "";
   }
-  
-  export default about;
-  
+
+  if (contentWrapper.innerText) {
+    clear(contentWrapper);
+  }
+  contentWrapper.style.visibility = "visible";
+  contentWrapper.innerText = "We have arguably THE BEST pasta!";
+  contentWrapper.appendChild(pastaImage);
+}
+
+export default about;
