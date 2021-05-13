@@ -13,7 +13,7 @@ function about() {
   if (contentWrapper.innerText) {
     clear(contentWrapper);
   }
-  contentWrapper.style.visibility = "visible";
+  contentWrapper.style.display = "flex";
   contentWrapper.innerText = "We have arguably THE BEST pasta!";
   contentWrapper.appendChild(pastaImage);
 }

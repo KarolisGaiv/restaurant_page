@@ -13,23 +13,20 @@ function displayMenu() {
   menuList.classList.add("menu-list");
   menuWrapper.appendChild(menuList);
 
-  const home = document.createElement("li");
+  const home = document.createElement("a");
   home.classList.add("menu-item");
-  home.id = "home";
   home.innerText = "Home";
   menuList.appendChild(home);
   home.addEventListener("click", displayHomeElement);
 
-  const about = document.createElement("li");
+  const about = document.createElement("a");
   about.classList.add("menu-item");
-  about.id = "about";
   about.innerText = "About";
   menuList.appendChild(about);
   about.addEventListener("click", displayAboutElement);
 
-  const contact = document.createElement("li");
+  const contact = document.createElement("a");
   contact.classList.add("menu-item");
-  contact.id = "contact";
   contact.innerText = "Contact";
   menuList.appendChild(contact);
   contact.addEventListener("click", displayContactElement);
@@ -40,9 +37,9 @@ function displayMenu() {
 
   menuList.style.listStyleType = "none";
   menuList.style.display = "flex";
-  menuList.style.justifyContent = "space-around";
   menuList.style.margin = "auto";
-  contentWrapper.style.visibility = "hidden" 
+  menuList.style.padding = 0;
+  contentWrapper.style.display = "none" 
 }
 
 export default displayMenu;

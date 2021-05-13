@@ -13,7 +13,7 @@ function contact() {
   if (contentWrapper.innerText) {
     clear(contentWrapper);
   }
-  contentWrapper.style.visibility = "visible";
+  contentWrapper.style.display = "flex";
   contentWrapper.innerText = "Just come to visit us!";
   contentWrapper.appendChild(chefImage);
 }

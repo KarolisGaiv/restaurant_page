@@ -13,7 +13,7 @@ function home() {
   if (contentWrapper.innerText) {
     clear(contentWrapper);
   }
-  contentWrapper.style.visibility = "visible";
+  contentWrapper.style.display = "flex";
   contentWrapper.innerText = "Best pizza in Your countryside!";
   contentWrapper.appendChild(pizzaImage);
 }
