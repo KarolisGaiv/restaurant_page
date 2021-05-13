@@ -1,40 +1,41 @@
 import displayHomeElement from "./home";
 
 function displayMenu() {
-    const pageBody = document.querySelector(".page-wrapper")
+  const pageBody = document.querySelector(".page-wrapper");
 
-    const menuWrapper = document.createElement("nav")
-    menuWrapper.classList.add("menu-wrapper")
-    pageBody.appendChild(menuWrapper)
+  const menuWrapper = document.createElement("nav");
+  menuWrapper.classList.add("menu-wrapper");
+  pageBody.appendChild(menuWrapper);
 
-    const menuList = document.createElement("ul")
-    menuList.classList.add("menu-list")
-    menuWrapper.appendChild(menuList)
+  const menuList = document.createElement("ul");
+  menuList.classList.add("menu-list");
+  menuWrapper.appendChild(menuList);
 
-    const home = document.createElement("li")
-    home.classList.add("menu-item")
-    home.innerText = "Home"
-    home.addEventListener("click", displayHomeElement)
-    menuList.appendChild(home)
+  const home = document.createElement("li");
+  home.classList.add("menu-item");
+  home.innerText = "Home";
 
-    const about = document.createElement("li")
-    about.classList.add("menu-item")
-    about.innerText = "About"
-    menuList.appendChild(about)
+  menuList.appendChild(home);
+  home.addEventListener("click", displayHomeElement);
 
-    const contact = document.createElement("li")
-    contact.classList.add("menu-item")
-    contact.innerText = "Contact"
-    menuList.appendChild(contact)
+  const about = document.createElement("li");
+  about.classList.add("menu-item");
+  about.innerText = "About";
+  menuList.appendChild(about);
 
-    // const itemSection = document.createElement("section")
-    // itemSection.classList.add("menu-item-section")
-    // pageBody.appendChild(itemSection)
+  const contact = document.createElement("li");
+  contact.classList.add("menu-item");
+  contact.innerText = "Contact";
+  menuList.appendChild(contact);
 
-    menuList.style.listStyleType = "none"
-    menuList.style.display = "flex"
-    menuList.style.justifyContent = "space-around"
-    menuList.style.margin = "auto"
+  // const itemSection = document.createElement("section")
+  // itemSection.classList.add("menu-item-section")
+  // pageBody.appendChild(itemSection)
+
+  menuList.style.listStyleType = "none";
+  menuList.style.display = "flex";
+  menuList.style.justifyContent = "space-around";
+  menuList.style.margin = "auto";
 }
 
-export default displayMenu
+export default displayMenu;
