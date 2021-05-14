@@ -1,10 +1,12 @@
+import chef from "../images/chef.jpg"
+
 function contact() {
   const pageWrapper = document.querySelector(".page-wrapper");
   const contentWrapper = document.querySelector(".menu-item-content");
 
   const chefImage = document.createElement("img");
   chefImage.classList.add("menu-item-image");
-  chefImage.src = "../../assets/chef.jpg";
+  chefImage.src = chef;
 
   function clear(element) {
     element.innerHTML = "";

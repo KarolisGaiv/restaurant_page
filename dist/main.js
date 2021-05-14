@@ -10,6 +10,46 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/images/chef.jpg":
+/*!*****************************!*\
+  !*** ./src/images/chef.jpg ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"00c34f0b0a696721b28e16dac23b670d.jpg\");\n\n//# sourceURL=webpack://restaurant_page/./src/images/chef.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/pasta.jpg":
+/*!******************************!*\
+  !*** ./src/images/pasta.jpg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"82f601cf27bbd537ce1009347ec739e3.jpg\");\n\n//# sourceURL=webpack://restaurant_page/./src/images/pasta.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/pizza.jpg":
+/*!******************************!*\
+  !*** ./src/images/pizza.jpg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"672793173c15c0df6a806b7df0b9e95f.jpg\");\n\n//# sourceURL=webpack://restaurant_page/./src/images/pizza.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/restaurantBanner.jpg":
+/*!*****************************************!*\
+  !*** ./src/images/restaurantBanner.jpg ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"d25820f6278a90e880ee144cfb269d3e.jpg\");\n\n//# sourceURL=webpack://restaurant_page/./src/images/restaurantBanner.jpg?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -26,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction about() {\n  const pageWrapper = document.querySelector(\".page-wrapper\");\n  const contentWrapper = document.querySelector(\".menu-item-content\");\n\n  const pastaImage = document.createElement(\"img\");\n  pastaImage.classList.add(\"menu-item-image\");\n  pastaImage.src = \"../../assets/pasta.jpg\";\n\n  function clear(element) {\n    element.innerHTML = \"\";\n  }\n\n  if (contentWrapper.innerText) {\n    clear(contentWrapper);\n  }\n  contentWrapper.style.display = \"flex\";\n  contentWrapper.innerText = \"We have arguably THE BEST pasta!\";\n  contentWrapper.appendChild(pastaImage);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (about);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_pasta_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/pasta.jpg */ \"./src/images/pasta.jpg\");\n\n\nfunction about() {\n  const pageWrapper = document.querySelector(\".page-wrapper\");\n  const contentWrapper = document.querySelector(\".menu-item-content\");\n\n  const pastaImage = document.createElement(\"img\");\n  pastaImage.classList.add(\"menu-item-image\");\n  pastaImage.src = _images_pasta_jpg__WEBPACK_IMPORTED_MODULE_0__.default;\n\n  function clear(element) {\n    element.innerHTML = \"\";\n  }\n\n  if (contentWrapper.innerText) {\n    clear(contentWrapper);\n  }\n  contentWrapper.style.display = \"flex\";\n  contentWrapper.innerText = \"We have arguably THE BEST pasta!\";\n  contentWrapper.appendChild(pastaImage);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (about);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/about.js?");
 
 /***/ }),
 
@@ -36,7 +76,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction contact() {\n  const pageWrapper = document.querySelector(\".page-wrapper\");\n  const contentWrapper = document.querySelector(\".menu-item-content\");\n\n  const chefImage = document.createElement(\"img\");\n  chefImage.classList.add(\"menu-item-image\");\n  chefImage.src = \"../../assets/chef.jpg\";\n\n  function clear(element) {\n    element.innerHTML = \"\";\n  }\n\n  if (contentWrapper.innerText) {\n    clear(contentWrapper);\n  }\n  contentWrapper.style.display = \"flex\";\n  contentWrapper.innerText = \"Just come to visit us!\";\n  contentWrapper.appendChild(chefImage);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/contact.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_chef_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/chef.jpg */ \"./src/images/chef.jpg\");\n\n\nfunction contact() {\n  const pageWrapper = document.querySelector(\".page-wrapper\");\n  const contentWrapper = document.querySelector(\".menu-item-content\");\n\n  const chefImage = document.createElement(\"img\");\n  chefImage.classList.add(\"menu-item-image\");\n  chefImage.src = _images_chef_jpg__WEBPACK_IMPORTED_MODULE_0__.default;\n\n  function clear(element) {\n    element.innerHTML = \"\";\n  }\n\n  if (contentWrapper.innerText) {\n    clear(contentWrapper);\n  }\n  contentWrapper.style.display = \"flex\";\n  contentWrapper.innerText = \"Just come to visit us!\";\n  contentWrapper.appendChild(chefImage);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contact);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/contact.js?");
 
 /***/ }),
 
@@ -46,7 +86,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction home() {\n  const pageWrapper = document.querySelector(\".page-wrapper\");\n  const contentWrapper = document.querySelector(\".menu-item-content\");\n\n  const pizzaImage = document.createElement(\"img\");\n  pizzaImage.classList.add(\"menu-item-image\");\n  pizzaImage.src = \"../../assets/pizza.jpg\";\n\n  function clear(element) {\n    element.innerHTML = \"\";\n  }\n\n  if (contentWrapper.innerText) {\n    clear(contentWrapper);\n  }\n  contentWrapper.style.display = \"flex\";\n  contentWrapper.innerText = \"Best pizza in Your countryside!\";\n  contentWrapper.appendChild(pizzaImage);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_pizza_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/pizza.jpg */ \"./src/images/pizza.jpg\");\n\n\nfunction home() {\n  const pageWrapper = document.querySelector(\".page-wrapper\");\n  const contentWrapper = document.querySelector(\".menu-item-content\");\n\n  const pizzaImage = document.createElement(\"img\");\n  pizzaImage.classList.add(\"menu-item-image\");\n  pizzaImage.src = _images_pizza_jpg__WEBPACK_IMPORTED_MODULE_0__.default;\n\n  function clear(element) {\n    element.innerHTML = \"\";\n  }\n\n  if (contentWrapper.innerText) {\n    clear(contentWrapper);\n  }\n  contentWrapper.style.display = \"flex\";\n  contentWrapper.innerText = \"Best pizza in Your countryside!\";\n  contentWrapper.appendChild(pizzaImage);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (home);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/home.js?");
 
 /***/ }),
 
@@ -66,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction loadPage() {\n  const pageHeader = document.createElement(\"header\");\n  pageHeader.classList.add(\"page-header\")\n\n  document.body.appendChild(pageHeader);\n\n  const banner = document.createElement(\"img\");\n  banner.src = \"../assets/restaurantBanner.jpg\";\n  banner.classList.add(\"page-header-banner\")\n  pageHeader.appendChild(banner);\n\n  const header = document.createElement(\"h1\");\n  header.classList.add(\"restaurant-header\");\n  header.innerHTML = \"THE BEST Restaurant in Countryside!\";\n  pageHeader.appendChild(header);\n\n  const pageWrapper = document.createElement(\"main\");\n  pageWrapper.classList.add(\"page-wrapper\");\n  document.body.appendChild(pageWrapper);\n\n  const introWrapper = document.createElement(\"article\");\n  pageWrapper.appendChild(introWrapper);\n\n  const about = document.createElement(\"p\");\n  let aboutText = document.createTextNode(\n    \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa vel autem deserunt rem nesciunt, laudantium voluptatum labore possimus placeat enim dicta accusamus recusandae veritatis molestiae eum similique explicabo tempora?\"\n  );\n  about.appendChild(aboutText);\n  introWrapper.appendChild(about);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _images_restaurantBanner_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../images/restaurantBanner.jpg */ \"./src/images/restaurantBanner.jpg\");\n\n\nfunction loadPage() {\n  const pageHeader = document.createElement(\"header\");\n  pageHeader.classList.add(\"page-header\")\n\n  document.body.appendChild(pageHeader);\n\n  const banner = document.createElement(\"img\");\n  banner.src = _images_restaurantBanner_jpg__WEBPACK_IMPORTED_MODULE_0__.default;\n  banner.classList.add(\"page-header-banner\")\n  pageHeader.appendChild(banner);\n\n  const header = document.createElement(\"h1\");\n  header.classList.add(\"restaurant-header\");\n  header.innerHTML = \"THE BEST Restaurant in Countryside!\";\n  pageHeader.appendChild(header);\n\n  const pageWrapper = document.createElement(\"main\");\n  pageWrapper.classList.add(\"page-wrapper\");\n  document.body.appendChild(pageWrapper);\n\n  const introWrapper = document.createElement(\"article\");\n  pageWrapper.appendChild(introWrapper);\n\n  const about = document.createElement(\"p\");\n  let aboutText = document.createTextNode(\n    \"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam culpa vel autem deserunt rem nesciunt, laudantium voluptatum labore possimus placeat enim dicta accusamus recusandae veritatis molestiae eum similique explicabo tempora?\"\n  );\n  about.appendChild(aboutText);\n  introWrapper.appendChild(about);\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n\n//# sourceURL=webpack://restaurant_page/./src/modules/pageLoad.js?");
 
 /***/ })
 
@@ -109,6 +149,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -123,6 +175,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/

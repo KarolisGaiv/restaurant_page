@@ -1,3 +1,5 @@
+import restaurantBanner from "../images/restaurantBanner.jpg"
+
 function loadPage() {
   const pageHeader = document.createElement("header");
   pageHeader.classList.add("page-header")
@@ -5,7 +7,7 @@ function loadPage() {
   document.body.appendChild(pageHeader);
 
   const banner = document.createElement("img");
-  banner.src = "../assets/restaurantBanner.jpg";
+  banner.src = restaurantBanner;
   banner.classList.add("page-header-banner")
   pageHeader.appendChild(banner);
 

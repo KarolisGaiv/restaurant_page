@@ -1,10 +1,12 @@
+import pizza from "../images/pizza.jpg"
+
 function home() {
   const pageWrapper = document.querySelector(".page-wrapper");
   const contentWrapper = document.querySelector(".menu-item-content");
 
   const pizzaImage = document.createElement("img");
   pizzaImage.classList.add("menu-item-image");
-  pizzaImage.src = "../../assets/pizza.jpg";
+  pizzaImage.src = pizza;
 
   function clear(element) {
     element.innerHTML = "";
