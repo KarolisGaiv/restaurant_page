@@ -13,17 +13,12 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|jpg)/,
-        use: [
-          "file-loader",
-          {
-            loader: "image-webpack-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images",
-            },
-          },
-        ],
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: "file-loader",
+        options: {
+          name: "[path][name].[ext]",
+          outputPath: "images",
+        },
       },
       {
         test: /\.(scss|css)$/,
