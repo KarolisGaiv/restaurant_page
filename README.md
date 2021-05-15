@@ -13,3 +13,5 @@ Create a restaurant page using JavaScript to generate the entire contents of the
   * Webpack
   
 Clone repository locally and use "npm start" in the console to start the project.
+
+You can [check page over here](https://karolisgaiv.github.io/restaurant_page/)
